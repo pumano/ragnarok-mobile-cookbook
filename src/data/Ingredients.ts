@@ -53,7 +53,7 @@ export const ingredients: Ingredient[] = [
     },
     {
         name: 'Marc Meat',
-        image: 'mark_meat.png',
+        image: 'marc_meat.png',
         monsters: ['Marc', 'Nightmare']
     },
     {
