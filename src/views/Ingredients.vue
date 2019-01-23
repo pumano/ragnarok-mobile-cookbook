@@ -1,5 +1,5 @@
 <template>
-  <a-table :columns="columns" :dataSource="ingredientsData">
+  <a-table :columns="columns" :dataSource="ingredientsData" :pagination="false">
     <div slot="name" slot-scope="text">
       {{ text }}
       
