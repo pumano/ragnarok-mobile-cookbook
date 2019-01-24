@@ -1,6 +1,8 @@
 # ragnarok-mobile-cookbook
 Ragnarok Mobile cookbook recipes
 
+created via Vue.js 2 / Vuetify
+
 ## Project setup
 ```
 npm install
