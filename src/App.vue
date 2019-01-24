@@ -1,9 +1,14 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/ingredients">Ingredients</router-link>
-    </div>
+    <v-toolbar>
+    <v-toolbar-side-icon></v-toolbar-side-icon>
+    <v-toolbar-title>Ragnarok Mobile Cookbook</v-toolbar-title>
+    <v-spacer></v-spacer>
+    <v-toolbar-items class="hidden-sm-and-down">
+      <v-btn flat to="/" exact>Recipes</v-btn>
+      <v-btn flat to="/ingredients" exact>Ingredients</v-btn>
+    </v-toolbar-items>
+  </v-toolbar>
     <router-view/>
   </div>
 </template>

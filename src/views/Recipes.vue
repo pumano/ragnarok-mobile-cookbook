@@ -5,18 +5,18 @@
         <template slot="items" slot-scope="props">
           <td class="text-xs-center">
             <h3>{{ props.item.name }}</h3>
-            <img :src="require(`@/assets/ingredients/${props.item.image}`)">
+            <img :src="require(`@/assets/recipes/${props.item.image}`)">
           </td>
 
           <td>
-            <div class="monsters-scope">
+            <div class="ingredients-scope">
               <div
-                class="monsters"
-                v-for="(monster, index) in props.item.monsters"
-                :key="monster + index"
+                class="ingredients"
+                v-for="(ingredient, index) in props.item.ingredients"
+                :key="ingredient + index"
               >
-                <h3>{{ monster.name }}</h3>
-                <img :src="require(`@/assets/monsters/${monster.image}`)">
+                <h3>{{ ingredient.name }}</h3>
+                <img :src="require(`@/assets/ingredients/${ingredient.image}`)">
               </div>
             </div>
           </td>
@@ -29,13 +29,14 @@
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 
-import { monsters as monstersData } from "../data/Monsters";
+import { recipes } from "../data/Recipes";
 import { ingredients } from "../data/Ingredients";
-import { Monster } from "@/models/Monster";
+
+import { Recipe } from "@/models/Recipe";
 import { Ingredient } from "@/models/Ingredient";
 
 @Component
-export default class Ingredients extends Vue {
+export default class Recipes extends Vue {
   headers = [
     {
       text: "Name",
@@ -43,47 +44,46 @@ export default class Ingredients extends Vue {
       align: "center"
     },
     {
-      text: "Monsters",
-      value: "monsters",
+      text: "Ingredients",
+      value: "ingredients",
       align: "center"
     }
   ];
 
-  rows: Ingredient[] = [];
-  activeTab = "tab-1";
+  rows: Recipe[] = [];
 
   mounted() {
-    this.ingredientsData();
+    this.recipesData();
   }
 
   // computed
-  ingredientsData() {
-    ingredients.forEach(element => {
-      if (element.monsters) {
-        element.monsters = element.monsters.map(monster =>
-          monstersData.find(_monster => _monster.name === monster)
+  recipesData() {
+    recipes.forEach(element => {
+      if (element.ingredients) {
+        element.ingredients = element.ingredients.map(ingredient =>
+          ingredients.find(_ingredient => _ingredient.name === ingredient)
         );
       }
     });
-    this.rows = ingredients;
+    this.rows = recipes;
     console.log(this.rows);
-    return ingredients;
+    return recipes;
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.monsters-scope {
+.ingredients-scope {
   display: flex !important;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.monsters {
+.ingredients {
   padding: 10px;
 }
-.monsters:hover {
+.ingredients:hover {
   cursor: pointer;
 }
 </style>
