@@ -101,6 +101,24 @@ export const ingredients: Ingredient[] = [
         name: 'Lunatic Meat',
         type: 'common',
         image: 'lunatic_meat.png',
-        monsters: ['Prontera South']
+        monsters: ['Lunatic']
+    },
+    {
+        name: 'West Gate Tomato',
+        type: 'common',
+        image: 'west_gate_tomato.png',
+        monsters: ['Yoyo']
+    },
+    {
+        name: 'Vadon Meat',
+        type: 'common',
+        image: 'vadon_meat.png',
+        monsters: ['Vadon']
+    },
+    {
+        name: 'Poring Apple',
+        type: 'common',
+        image: 'poring_apple.png',
+        monsters: ['Poring']
     },
 ];
