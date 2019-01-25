@@ -1,30 +1,60 @@
 <template>
   <div>
     <template>
-         <v-tabs fixed-tabs v-model="tabs">
-    <v-tab>
-      Luxury Worktop
-    </v-tab>
-    <v-tab>
-      Wild Life BBQ
-    </v-tab>
-    <v-tab>
-      Pressure Cooker
-    </v-tab>
-    <v-tab>
-      Beverage Stall
-    </v-tab>
-    </v-tabs>
+         <v-tabs fixed-tabs v-model="activeTab">
+            <v-tab :key="0">Luxury Worktop</v-tab>
+            <v-tab :key="1">Wild Life BBQ</v-tab>
+            <v-tab :key="2">Pressure Cooker</v-tab>
+            <v-tab :key="3">Beverage Stall</v-tab>
+          </v-tabs>
 
-    <v-tabs-items v-model="tabs" class="white elevation-1">
-      <v-tab-item>
-        <v-data-table :headers="headers" :items="rows" class="elevation-1">
+          <v-tabs-items 
+           
+            class="white elevation-1">
+      
+            <v-tab-item :key="0" v-if="activeTab === 0">
+                <v-data-table 
+                  :headers="headers" 
+                  :items="rows" 
+                  :disable-initial-sort="true"
+                  item-key="name"
+                  class="elevation-1">
+                    <template slot="items" slot-scope="props">
+                      <td class="text-xs-center">
+                        <h3>{{ props.item.name }}</h3>
+                        <img :src="require(`@/assets/recipes/${props.item.image}`)">
+                      </td>
+<!--
+                      <td>
+                        <div class="ingredients-scope">
+                          <div
+                            class="ingredients"
+                            v-for="(ingredient, index) in props.item.ingredients"
+                            :key="ingredient + index">
+                              <h3>{{ ingredient.name }}</h3>
+                              <img :src="require(`@/assets/ingredients/${ingredient.image}`)">
+                          </div>
+                        </div>
+                      </td>
+                      -->
+                    </template>
+                  </v-data-table>
+              </v-tab-item>
+
+      <v-tab-item :key="1" v-if="activeTab === 1">
+        <v-data-table 
+          :headers="headers" 
+          :items="rows" 
+          :disable-initial-sort="true" 
+          item-key="name"
+          class="elevation-1">
         <template slot="items" slot-scope="props">
           <td class="text-xs-center">
             <h3>{{ props.item.name }}</h3>
             <img :src="require(`@/assets/recipes/${props.item.image}`)">
           </td>
 
+<!--
           <td>
             <div class="ingredients-scope">
               <div
@@ -37,6 +67,69 @@
               </div>
             </div>
           </td>
+          -->
+        </template>
+      </v-data-table>
+      </v-tab-item>
+
+       <v-tab-item :key="2" v-if="activeTab === 2">
+        <v-data-table 
+          :headers="headers" 
+          :items="rows" 
+          :disable-initial-sort="true" 
+          item-key="name"
+          class="elevation-1">
+        <template slot="items" slot-scope="props">
+          <td class="text-xs-center">
+            <h3>{{ props.item.name }}</h3>
+            <img :src="require(`@/assets/recipes/${props.item.image}`)">
+          </td>
+
+<!--
+          <td>
+            <div class="ingredients-scope">
+              <div
+                class="ingredients"
+                v-for="(ingredient, index) in props.item.ingredients"
+                :key="ingredient + index"
+              >
+                <h3>{{ ingredient.name }}</h3>
+                <img :src="require(`@/assets/ingredients/${ingredient.image}`)">
+              </div>
+            </div>
+          </td>
+          -->
+        </template>
+      </v-data-table>
+      </v-tab-item>
+
+       <v-tab-item :key="3" v-if="activeTab === 3">
+        <v-data-table 
+          :headers="headers" 
+          :items="rows" 
+          :disable-initial-sort="true" 
+          item-key="name"
+          class="elevation-1">
+        <template slot="items" slot-scope="props">
+          <td class="text-xs-center">
+            <h3>{{ props.item.name }}</h3>
+            <img :src="require(`@/assets/recipes/${props.item.image}`)">
+          </td>
+
+<!--
+          <td>
+            <div class="ingredients-scope">
+              <div
+                class="ingredients"
+                v-for="(ingredient, index) in props.item.ingredients"
+                :key="ingredient + index"
+              >
+                <h3>{{ ingredient.name }}</h3>
+                <img :src="require(`@/assets/ingredients/${ingredient.image}`)">
+              </div>
+            </div>
+          </td>
+          -->
         </template>
       </v-data-table>
       </v-tab-item>
@@ -48,16 +141,18 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 
-import { recipes } from "../data/Recipes";
-import { ingredients } from "../data/Ingredients";
+import { recipes as recipesData } from "../data/Recipes";
+import { ingredients as ingredientsData } from "../data/Ingredients";
 
 import { Recipe } from "@/models/Recipe";
 import { Ingredient } from "@/models/Ingredient";
 
 @Component
 export default class Recipes extends Vue {
+  ingredients = ingredientsData;
+  recipes = recipesData;
   headers = [
     {
       text: "Name",
@@ -72,25 +167,49 @@ export default class Recipes extends Vue {
   ];
 
   rows: Recipe[] = [];
-  tabs = 0;
+  activeTab: number = 3;
 
   mounted() {
-    this.recipesData(this.adoptType(this.tabs));
+    console.log('active tab: ', this.activeTab);
+    this.recipesData(this.adoptType(this.activeTab));
+  }
+
+  updated() {
+    console.log(this.rows);
+  }
+
+  @Watch('activeTab')
+  onActiveTabChanged(val: number, oldVal: number) {
+    console.log('activetab: ', this.activeTab);
+    this.recipesData(this.adoptType(this.activeTab));
   }
 
   // computed
   recipesData(type: string) {
-    recipes.forEach(element => {
+    let myRecipes = recipesData;
+
+    myRecipes.forEach((element) => {
       if (element.ingredients) {
-        element.ingredients = element.ingredients.map(ingredient =>
-          ingredients.find(_ingredient => _ingredient.name === ingredient)
+        console.log(element.ingredients);
+        element.ingredients = element.ingredients.map(ingredient => {
+          console.log(ingredient)
+          this.ingredients.find(_ingredient => _ingredient.name === ingredient)
+        }
         );
+      } else {
+        console.error('error');
       }
     });
-    const _recipes = recipes.filter(recipe => recipe.type === type);
+    // this.rows = recipes;
+    const _recipes = myRecipes.filter(recipe => recipe.type === type);
     this.rows = _recipes;
-    console.log(this.rows);
-    return recipes;
+    this.$forceUpdate();
+    console.log('updated: ', _recipes);
+    // return _recipes;
+  }
+
+  filteredData(type: string) {
+
   }
 
   adoptType(tabId: number) {
