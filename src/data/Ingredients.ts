@@ -107,7 +107,7 @@ export const ingredients: Ingredient[] = [
         name: 'West Gate Tomato',
         type: 'common',
         image: 'west_gate_tomato.png',
-        monsters: ['Yoyo']
+        monsters: ['Mandragora']
     },
     {
         name: 'Vadon Meat',

@@ -193,4 +193,28 @@ export const monsters: Monster[] = [
         lvl: 86,
         locations: ['Glast Heim Chivalry']
     },
+    {
+        name: 'Poring',
+        image: 'poring.png',
+        lvl: 1,
+        locations: ['North Gate', 'South Gate']
+    },
+    {
+        name: 'Lunatic',
+        image: 'lunatic.png',
+        lvl: 2,
+        locations: ['South Gate', 'Labyrinth Forest']
+    },
+    {
+        name: 'Vadon',
+        image: 'vadon.png',
+        lvl: 29,
+        locations: ['Underwater Cave']
+    },
+    {
+        name: 'Mandragora',
+        image: 'mandragora.png',
+        lvl: 22,
+        locations: ['Mjolnir', 'Labyrinth Forest']
+    }
 ];

@@ -1,15 +1,21 @@
 <template>
   <div>
     <template>
-      <v-data-table :headers="headers" :items="rows" class="elevation-1">
+      <v-data-table
+        :headers="headers"
+        :items="rows"
+        item-key="name"
+        v-if="rows.length > 0"
+        class="elevation-1"
+      >
         <template slot="items" slot-scope="props">
-          <td class="text-xs-center">
+          <td class="text-xs-center" v-if="props.item">
             <h3>{{ props.item.name }}</h3>
             <img :src="require(`@/assets/ingredients/${props.item.image}`)">
           </td>
 
           <td>
-            <div class="monsters-scope">
+            <div class="monsters-scope" v-if="props.item.monsters">
               <div
                 class="monsters"
                 v-for="(monster, index) in props.item.monsters"
@@ -30,12 +36,14 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 
 import { monsters as monstersData } from "../data/Monsters";
-import { ingredients } from "../data/Ingredients";
+import { ingredients as ingredientsData } from "../data/Ingredients";
 import { Monster } from "@/models/Monster";
 import { Ingredient } from "@/models/Ingredient";
 
 @Component
 export default class Ingredients extends Vue {
+  ingredients = ingredientsData;
+  monsters = monstersData;
   headers = [
     {
       text: "Name",
@@ -50,24 +58,38 @@ export default class Ingredients extends Vue {
   ];
 
   rows: Ingredient[] = [];
-  activeTab = "tab-1";
+
+  created() {
+    console.log("created");
+    this.normalizeData();
+  }
 
   mounted() {
-    this.ingredientsData();
+    console.log("mounted");
+    this.rows = this.ingredientsData();
+  }
+
+  beforeDestroyed() {
+    console.log("destroyed");
+    this.rows = [];
   }
 
   // computed
   ingredientsData() {
-    ingredients.forEach(element => {
+    return this.ingredients;
+  }
+
+  normalizeData() {
+    this.ingredients = this.ingredients.filter(
+      ingredient => ingredient.type === "rare"
+    );
+    this.ingredients.forEach(element => {
       if (element.monsters) {
-        element.monsters = element.monsters.map(monster =>
-          monstersData.find(_monster => _monster.name === monster)
-        );
+        element.monsters = element.monsters.map(monster => {
+          return this.monsters.find(_monster => _monster.name === monster);
+        });
       }
     });
-    this.rows = ingredients;
-    console.log(this.rows);
-    return ingredients;
   }
 }
 </script>
