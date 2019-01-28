@@ -1,5 +1,9 @@
 # ragnarok-mobile-cookbook
-Ragnarok Mobile cookbook recipes
+Ragnarok Mobile cookbook recipes and ingredients
+
+![Ragnarok Mobile Cookbook](/public/demo.png?raw=true "Ragnarok Mobile Cookbook")
+
+demo: https://ragnarok-mobile-cookbook.herokuapp.com/
 
 created via Vue.js 2 / Vuetify
 
