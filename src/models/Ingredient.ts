@@ -5,6 +5,7 @@ export class Ingredient {
         readonly name: string,
         readonly type: 'common' | 'rare',
         readonly image?: string,
-        public monsters?: any[],
+        public monsters?: string[],
+        public monsterList?: Monster[]
     ) {}
 }

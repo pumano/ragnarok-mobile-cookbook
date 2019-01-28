@@ -15,10 +15,10 @@
           </td>
 
           <td>
-            <div class="monsters-scope" v-if="props.item.monsters">
+            <div class="monsters-scope" v-if="props.item.monsterList">
               <div
                 class="monsters"
-                v-for="(monster, index) in props.item.monsters"
+                v-for="(monster, index) in props.item.monsterList"
                 :key="monster + index"
               >
                 <h3>{{ monster.name }}</h3>
@@ -85,8 +85,16 @@ export default class Ingredients extends Vue {
     );
     this.ingredients.forEach(element => {
       if (element.monsters) {
-        element.monsters = element.monsters.map(monster => {
-          return this.monsters.find(_monster => _monster.name === monster);
+        element.monsterList = [];
+        element.monsters.forEach(monster => {
+               const entity = this.monsters.find(
+              _monster => _monster.name === monster
+            );
+         
+         if (entity) {
+            element.monsterList!.push(entity);
+         }
+
         });
       }
     });

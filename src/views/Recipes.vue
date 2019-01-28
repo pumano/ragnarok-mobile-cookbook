@@ -25,10 +25,10 @@
               </td>
 
               <td>
-                <div class="ingredients-scope" v-if="props.item.ingredients">
+                <div class="ingredients-scope" v-if="props.item.ingredientList">
                   <div
                     class="ingredients"
-                    v-for="(ingredient, index) in props.item.ingredients"
+                    v-for="(ingredient, index) in props.item.ingredientList"
                     :key="ingredient + index"
                   >
                     <h3 v-if="ingredient.name">{{ ingredient.name }}</h3>
@@ -60,6 +60,7 @@ import { Ingredient } from "@/models/Ingredient";
 export default class Recipes extends Vue {
   recipes: Recipe[] = [];
   ingredients = ingredientsData;
+  normalized: boolean = false;
   headers = [
     {
       text: "Name",
@@ -106,19 +107,23 @@ export default class Recipes extends Vue {
     let myRecipes = recipesData;
 
     myRecipes.forEach(element => {
-      if (element.ingredients && element.ingredients.length > 0) {
-        element.ingredients = element.ingredients.map(ingredient => {
-          if (ingredient !== undefined) {
-            return this.ingredients.find(
+      if (element.ingredients) {
+        element.ingredientList = [];
+        element.ingredients.forEach(ingredient => {
+
+          const obj = this.ingredients.find(
               _ingredient => _ingredient.name === ingredient
             );
-          }
+         
+         if (obj) {
+            element.ingredientList!.push(obj);
+         }
         });
       } else {
         console.error("error");
       }
     });
-    this.recipes = myRecipes;
+      this.recipes = myRecipes;
   }
 
   adoptType(tabId: number) {
