@@ -145,4 +145,28 @@ export const ingredients: Ingredient[] = [
         image: 'south_gate_carrot.png',
         monsters: ['Willow']
     },
+    {
+        name: 'Salt',
+        type: 'common',
+        image: 'salt.png',
+        monsters: []
+    },
+    {
+        name: 'Flour',
+        type: 'common',
+        image: 'flour.png',
+        monsters: []
+    },
+    {
+        name: 'Sugar',
+        type: 'common',
+        image: 'sugar.png',
+        monsters: []
+    },
+    {
+        name: 'Milk',
+        type: 'common',
+        image: 'milk.png',
+        monsters: []
+    },
 ];

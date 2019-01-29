@@ -201,4 +201,140 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Poring Apple', 'Civet Grape']
     },
+    {
+        name: 'Healthy Salad',
+        description: 'MaxHP+90, MaxSP+9, MATK+12',
+        image: 'healthy_salad.png',
+        stars: 1,
+        type: 'Luxury Worktop',
+        ingredients: ['West Gate Tomato', 'Salt']
+    },
+    {
+        name: 'MSG',
+        description: 'MaxHP+90, MaxSP+9, MDEF+12',
+        image: 'msg.png',
+        stars: 1,
+        type: 'Wild Life BBQ',
+        ingredients: ['South Gate Carrot', 'Salt']
+    },
+    {
+        name: 'Mum\'s Soup',
+        description: 'MaxHP+90, MaxSP+9, MATK+12, MDEF+12',
+        image: 'mums_soup.png',
+        stars: 1,
+        type: 'Pressure Cooker',
+        ingredients: ['South Gate Carrot', 'West Gate Tomato']
+    },
+    {
+        name: 'Civet Cookie',
+        description: 'MaxHP+90, MaxSP+9, MATK+12',
+        image: 'ice_cream.png',
+        stars: 1,
+        type: 'Beverage Stall',
+        ingredients: ['Civet Grape', 'Flour', 'Salt']
+    },
+    {
+        name: 'Delicious Steak',
+        description: 'MaxHP+120, MaxSP+12, DEF+16, MDEF+16, Gain immunity to the status ailments received, Cooldown time : 15 sec. Can only immune 2 times of status ailments',
+        image: 'delicious_steak.png',
+        stars: 1.5,
+        type: 'Luxury Worktop',
+        ingredients: ['Egg Shell Picky', 'Desert Wolf Meat', 'Mountain Celery']
+    },
+    {
+        name: 'Messenger\'s Kebab',
+        description: 'MaxHP+200, MaxSP+12, DEF+16, MDEF+16',
+        image: 'messengers_kebab.png',
+        stars: 1.5,
+        type: 'Wild Life BBQ',
+        ingredients: ['Desert Wolf Meat', 'Rocker Leg Meat', 'Magic Spore']
+    },
+    {
+        name: 'Music Box Broth',
+        description: 'MaxHP+120, MaxSP+12, DEF+16, Gear ASPD+0.01',
+        image: 'music_box_broth.png',
+        stars: 1.5,
+        type: 'Pressure Cooker',
+        ingredients: ['Egg Shell Picky', 'Rocker Leg Meat', 'Sugar']
+    },
+    {
+        name: 'Seaside Black Tea',
+        description: 'MaxHP+120, MaxSP+12, MATK+16, DEF+16, Refine Piercing+0.75%',
+        image: 'ice_cream.png',
+        stars: 1.5,
+        type: 'Beverage Stall',
+        ingredients: ['Civet Grape', 'Flour', 'Salt']
+    },
+
+
+
+
+    {
+        name: 'Seafood Rice',
+        description: 'MaxHP+120, MaxSP+12, ATK+16, Movement Speed+1%',
+        image: 'seafood_rice.png',
+        stars: 1.5,
+        type: 'Luxury Worktop',
+        ingredients: ['Marina Meat', 'Inkfish Tentacle', 'Milk']
+    },
+    {
+        name: 'Eastrud Pride',
+        description: 'MaxHP+200, MaxSP+12, DEF+16, MDEF+16',
+        image: 'eastrud_pride.png',
+        stars: 1.5,
+        type: 'Wild Life BBQ',
+        ingredients: ['Marina Meat', 'Inkfish Tentacle', 'Vadon Meat']
+    },
+    {
+        name: 'Warm Current',
+        description: 'MaxHP+120, MaxSP+12, ATK+16, MDEF+16, Ignore DEF+0.75%',
+        image: 'music_box_broth.png',
+        stars: 1.5,
+        type: 'Pressure Cooker',
+        ingredients: ['Inkfish Tentacle', 'Hydra Meat', 'Flour']
+    },
+    {
+        name: 'Cheese Cake',
+        description: 'MaxHP+120, MaxSP+12, MATK+16, Damage to non-Boss+0.75%',
+        image: 'cheese_cake.png',
+        stars: 1.5,
+        type: 'Beverage Stall',
+        ingredients: ['Goblin Strawberry', 'Milk', 'Salt']
+    },
+
+
+
+
+    {
+        name: 'Vegetable Meal',
+        description: 'MaxHP+120, MaxSP+12, MATK+16, Skill Delay-0.75%',
+        image: 'vegetable_meal.png',
+        stars: 1.5,
+        type: 'Luxury Worktop',
+        ingredients: ['Mountain Celery', 'Magic Spore', 'Milk']
+    },
+    {
+        name: 'Farmer\'s Smile',
+        description: 'MaxHP+120, MaxSP+12, MDEF+16',
+        image: 'farmers_smile.png',
+        stars: 1.5,
+        type: 'Wild Life BBQ',
+        ingredients: ['Magic Spore', 'Poring Apple', 'Sugar']
+    },
+    {
+        name: 'Delicious Vegetable Soup',
+        description: 'MaxHP+120, MaxSP+12, MATK+16, MDEF+16',
+        image: 'delicious_vegetable_soup.png',
+        stars: 1.5,
+        type: 'Pressure Cooker',
+        ingredients: ['Mountain Celery', 'Magic Spore', 'Goblin Strawberry']
+    },
+    {
+        name: 'Poring Parfait',
+        description: 'MaxHP+120, MaxSP+12, ATK+16, MATK+16, Damage to Boss+0.75%',
+        image: 'poring_parfait.png',
+        stars: 1.5,
+        type: 'Beverage Stall',
+        ingredients: ['Civet Grape', 'Poring Apple', 'Goblin Strawberry']
+    },
 ];
