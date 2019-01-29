@@ -16,6 +16,7 @@
             :items="rows"
             :disable-initial-sort="true"
             item-key="name"
+            :rows-per-page-items="[-1]"
             class="elevation-1"
           >
             <template slot="items" slot-scope="props">

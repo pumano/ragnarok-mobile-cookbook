@@ -5,6 +5,7 @@
         :headers="headers"
         :items="rows"
         item-key="name"
+        :rows-per-page-items="[-1]"
         v-if="rows.length > 0"
         class="elevation-1"
       >
