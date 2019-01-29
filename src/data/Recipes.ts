@@ -260,15 +260,11 @@ export const recipes: Recipe[] = [
     {
         name: 'Seaside Black Tea',
         description: 'MaxHP+120, MaxSP+12, MATK+16, DEF+16, Refine Piercing+0.75%',
-        image: 'ice_cream.png',
+        image: 'seaside_black_tea.png',
         stars: 1.5,
         type: 'Beverage Stall',
-        ingredients: ['Civet Grape', 'Flour', 'Salt']
+        ingredients: ['Monkey Banana', 'Sugar', 'Milk']
     },
-
-
-
-
     {
         name: 'Seafood Rice',
         description: 'MaxHP+120, MaxSP+12, ATK+16, Movement Speed+1%',
@@ -336,5 +332,75 @@ export const recipes: Recipe[] = [
         stars: 1.5,
         type: 'Beverage Stall',
         ingredients: ['Civet Grape', 'Poring Apple', 'Goblin Strawberry']
+    },
+
+    {
+        name: 'Flame God History',
+        description: 'MaxHP+180, MaxSP+18, DEF+20, Gain immunity to the status ailments received, Cooldown time : 15 sec. Can only immune 3 times of status ailments',
+        image: 'flame_god_history.png',
+        stars: 2,
+        type: 'Luxury Worktop',
+        ingredients: ['Savage Meat', 'Desert Wolf Meat', 'Chili']
+    },
+    {
+        name: 'Gold Kebab',
+        description: 'MaxHP+300, MaxSP+18, DEF+20, MDEF+20',
+        image: 'gold_kebab.png',
+        stars: 2,
+        type: 'Wild Life BBQ',
+        ingredients: ['Muka Meat', 'Egg Shell Picky', 'Vanilla']
+    },
+    {
+        name: 'Satisfied',
+        description: 'MaxHP+180, MaxSP+18, DEF+20, Gear ASPD+1.5%',
+        image: 'satisfied.png',
+        stars: 2,
+        type: 'Pressure Cooker',
+        ingredients: ['Savage Meat', 'Muka Meat', 'Sugar']
+    },
+    {
+        name: 'Duke Juice',
+        description: 'MaxHP+180, MaxSP+18, MATK+20, DEF+20, Refine Piercing+1%',
+        image: 'duke_juice.png',
+        stars: 2,
+        type: 'Beverage Stall',
+        ingredients: ['Moai Melon', 'Goblin Strawberry', 'Vanilla']
+    },
+
+
+
+
+
+    {
+        name: 'East Seafood Kebab',
+        description: 'MaxHP+180, MaxSP+18, ATK+20, Movement Speed+0.15%',
+        image: 'east_seafood_kebab.png',
+        stars: 2,
+        type: 'Luxury Worktop',
+        ingredients: ['Marc Meat', 'Inkfish Tentacle', 'Chili']
+    },
+    {
+        name: 'Superb Seafood Kebab',
+        description: 'MaxHP+180, MaxSP+18, Physical Defense +20, Dmg increase to players +1%',
+        image: 'superb_seafood_kebab.png',
+        stars: 2,
+        type: 'Wild Life BBQ',
+        ingredients: ['Mutated Fish', 'Marina Meat', 'Chili']
+    },
+    {
+        name: 'Singing Soul',
+        description: 'MaxHP+180, MaxSP+18, ATK+20, MDEF+20, Ignore DEF+1%',
+        image: 'singing_soul.png',
+        stars: 2,
+        type: 'Pressure Cooker',
+        ingredients: ['Mutated Fish', 'Marc Meat', 'Milk']
+    },
+    {
+        name: 'Vantican Bread',
+        description: 'MaxHP+180, MaxSP+18, DEF+20, MDEF+20, Dmg to non-BOSS monster +1%',
+        image: 'vantican_bread.png',
+        stars: 2,
+        type: 'Beverage Stall',
+        ingredients: ['Savage Meat', 'Gold Pumpkin', 'Vanilla']
     },
 ];

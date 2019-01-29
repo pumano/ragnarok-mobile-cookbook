@@ -169,4 +169,16 @@ export const ingredients: Ingredient[] = [
         image: 'milk.png',
         monsters: []
     },
+    {
+        name: 'Chili',
+        type: 'common',
+        image: 'chili.png',
+        monsters: []
+    },
+    {
+        name: 'Vanilla',
+        type: 'common',
+        image: 'vanilla.png',
+        monsters: []
+    },
 ];
