@@ -200,6 +200,12 @@ export const monsters: Monster[] = [
         locations: ['North Gate', 'South Gate']
     },
     {
+        name: 'Chon Chon',
+        image: 'chon_chon.png',
+        lvl: 13,
+        locations: ['West Gate', 'Labyrinth Forest']
+    },
+    {
         name: 'Lunatic',
         image: 'lunatic.png',
         lvl: 2,
@@ -216,5 +222,11 @@ export const monsters: Monster[] = [
         image: 'mandragora.png',
         lvl: 22,
         locations: ['Mjolnir', 'Labyrinth Forest']
-    }
+    },
+    {
+        name: 'Willow',
+        image: 'willow.png',
+        lvl: 21,
+        locations: ['West Gate', 'Labyrinth Forest']
+    },
 ];

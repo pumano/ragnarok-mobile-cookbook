@@ -121,4 +121,28 @@ export const ingredients: Ingredient[] = [
         image: 'poring_apple.png',
         monsters: ['Poring']
     },
+    {
+        name: 'Rocker Leg Meat',
+        type: 'common',
+        image: 'rocker_leg_meat.png',
+        monsters: ['Rocker']
+    },
+    {
+        name: 'Hydra Meat',
+        type: 'common',
+        image: 'hydra_meat.png',
+        monsters: ['Hydra']
+    },
+    {
+        name: 'Civet Grape',
+        type: 'common',
+        image: 'civet_grape.png',
+        monsters: ['Chon Chon']
+    },
+    {
+        name: 'South Gate Carrot',
+        type: 'common',
+        image: 'south_gate_carrot.png',
+        monsters: ['Willow']
+    },
 ];

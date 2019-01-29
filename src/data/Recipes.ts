@@ -97,9 +97,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Vadon Meat']
     },
-
-
-
     {
         name: 'Rookie Jam',
         description: 'MaxHP+60, MaxSP+6, MATK+8',
@@ -131,5 +128,77 @@ export const recipes: Recipe[] = [
         stars: 0.5,
         type: 'Beverage Stall',
         ingredients: ['Poring Apple']
+    },
+    {
+        name: 'Dark Cuisine',
+        description: '??????????',
+        image: 'dark_cuisine.png',
+        stars: 0.5,
+        type: 'Wild Life BBQ',
+        ingredients: ['Poring Apple']
+    },
+    {
+        name: 'Traveler Bacon',
+        description: 'MaxHP+90, MaxSP+9, DEF+12',
+        image: 'traveler_bacon.png',
+        stars: 1,
+        type: 'Luxury Worktop',
+        ingredients: ['Lunatic Meat', 'Salt']
+    },
+    {
+        name: 'Popular Kebab',
+        description: 'MaxHP+90, MaxSP+9, DEF+12',
+        image: 'popular_kebab.png',
+        stars: 1,
+        type: 'Wild Life BBQ',
+        ingredients: ['Rocker Leg Meat', 'Salt']
+    },
+    {
+        name: 'Fragrant Broth',
+        description: 'MaxHP+90, MaxSP+9, DEF+12',
+        image: 'fragrant_broth.png',
+        stars: 1,
+        type: 'Pressure Cooker',
+        ingredients: ['Lunatic Meat', 'Flour']
+    },
+    {
+        name: 'Ray Dessert',
+        description: 'MaxHP+90, MaxSP+9, DEF+12',
+        image: 'ray_dessert.png',
+        stars: 1,
+        type: 'Beverage Stall',
+        ingredients: ['South Gate Carrot', 'Flour']
+    },
+    {
+        name: 'Seafood Bowl',
+        description: 'MaxHP+90, MaxSP+9, ATK+12',
+        image: 'seafood_bowl.png',
+        stars: 1,
+        type: 'Luxury Worktop',
+        ingredients: ['Vadon Meat', 'Flour']
+    },
+    {
+        name: 'Island Kebab',
+        description: 'MaxHP+90, MaxSP+9, ATK+12',
+        image: 'island_kebab.png',
+        stars: 1,
+        type: 'Wild Life BBQ',
+        ingredients: ['Hydra Meat', 'Flour']
+    },
+    {
+        name: 'Fish Head Soup',
+        description: 'MaxHP+90, MaxSP+9, ATK+12',
+        image: 'fish_head_soup.png',
+        stars: 1,
+        type: 'Pressure Cooker',
+        ingredients: ['Hydra Meat', 'Salt']
+    },
+    {
+        name: 'Ice Cream',
+        description: 'MaxHP+90, MaxSP+9, ATK+12',
+        image: 'ice_cream.png',
+        stars: 1,
+        type: 'Beverage Stall',
+        ingredients: ['Poring Apple', 'Civet Grape']
     },
 ];
