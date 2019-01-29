@@ -181,4 +181,28 @@ export const ingredients: Ingredient[] = [
         image: 'vanilla.png',
         monsters: []
     },
+    {
+        name: 'Apple Vinegar',
+        type: 'common',
+        image: 'apple_vinegar.png',
+        monsters: []
+    },
+    {
+        name: 'Cream',
+        type: 'common',
+        image: 'cream.png',
+        monsters: []
+    },
+    {
+        name: 'Cheese',
+        type: 'common',
+        image: 'cheese.png',
+        monsters: []
+    },
+    {
+        name: 'Sauce',
+        type: 'common',
+        image: 'sauce.png',
+        monsters: []
+    },
 ];
