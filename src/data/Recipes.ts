@@ -297,10 +297,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Goblin Strawberry', 'Milk', 'Salt']
     },
-
-
-
-
     {
         name: 'Vegetable Meal',
         description: 'MaxHP+120, MaxSP+12, MATK+16, Skill Delay-0.75%',
@@ -333,7 +329,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Civet Grape', 'Poring Apple', 'Goblin Strawberry']
     },
-
     {
         name: 'Flame God History',
         description: 'MaxHP+180, MaxSP+18, DEF+20, Gain immunity to the status ailments received, Cooldown time : 15 sec. Can only immune 3 times of status ailments',
@@ -366,11 +361,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Moai Melon', 'Goblin Strawberry', 'Vanilla']
     },
-
-
-
-
-
     {
         name: 'East Seafood Kebab',
         description: 'MaxHP+180, MaxSP+18, ATK+20, Movement Speed+0.15%',
@@ -437,8 +427,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Moai Melon', 'Bigfoot Pineapple', 'Vanilla']
     },
-
-
     {
         name: 'Yummy Steak',
         description: 'MaxHP+216, MaxSP+21, DEF+24, Gain immunity to the status ailments received, Cooldown time : 15 sec. Can only immune 3 times of status ailments',
@@ -471,9 +459,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Bigfoot Pineapple', 'Civet Grape', 'Cream']
     },
-
-
-
     {
         name: 'Yummy Fish Steak',
         description: 'MaxHP+216, MaxSP+21, ATK+24, DEF+24, Damage to Players+1.25%',
@@ -506,13 +491,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Moai Melon', 'Bigfoot Pineapple', 'Milk']
     },
-
-
-
-
-
-
-
     {
         name: 'Yummy Salad',
         description: 'MaxHP+216, MaxSP+21, MATK+24, Skill Delay-1.25%',
@@ -545,8 +523,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Moai Melon', 'Poring Apple', 'Cream']
     },
-
-
     {
         name: 'Fantasy Steak',
         description: 'MaxHP+300, MaxSP+30, DEF+30, Gain immunity to the status ailments received, Cooldown time : 15 sec. Can only immune 4 times of status ailments',
@@ -579,11 +555,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Lunatic Meat', 'Goblin Strawberry', 'Salt', 'Flour']
     },
-
-
-
-
-
     {
         name: 'Fantasy Seafood Kebab',
         description: 'MaxHP+300, MaxSP+30, ATK+30, Movement Speed+2%',
@@ -616,11 +587,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Poring Apple', 'Goblin Strawberry', 'Sugar', 'Milk']
     },
-
-
-
-
-
     {
         name: 'Fantasy Salad',
         description: 'MaxHP+300, MaxSP+30, MATK+30, Skill Delay-1.5%',
@@ -653,9 +619,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Monkey Banana', 'Civet Grape', 'Sugar', 'Milk']
     },
-
-
-
     {
         name: 'Geffen Steak',
         description: 'MaxHP+360, MaxSP+36, DEF+32, Gain immunity to the status ailments received, Cooldown time : 15 sec. Can only immune 4 times of status ailments',
@@ -688,13 +651,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Goblin Strawberry', 'Poring Apple', 'Sugar', 'Vanilla']
     },
-
-
-
-
-
-
-
     {
         name: 'Hydra',
         description: 'MaxHP+360, MaxSP+36, ATK+32, Movement Speed+2.5%',
@@ -727,11 +683,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Monkey Banana', 'Civet Grape', 'Milk', 'Vanilla']
     },
-
-
-
-
-
     {
         name: 'Jungle Dish',
         description: 'MaxHP+360, MaxSP+36, MATK+32, Skill Delay-1.75%',
@@ -764,13 +715,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Goblin Strawberry', 'Monkey Banana', 'Vanilla', 'Flour']
     },
-
-
-
-
-
-
-
     {
         name: 'Desert Steak',
         description: 'MaxHP+420, MaxSP+42, DEF+36, Gain immunity to the status ailments received, Cooldown time : 15 sec. Can only immune 4 times of status ailments',
@@ -803,12 +747,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Moai Melon', 'Goblin Strawberry', 'Cream', 'Cheese']
     },
-
-
-
-
-
-
     {
         name: 'Fishman\'s Soul',
         description: 'MaxHP+420, MaxSP+42, ATK+36, Movement Speed+3%',
@@ -841,11 +779,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Moai Melon', 'Bigfoot Pineapple', 'Sugar', 'Cheese']
     },
-
-
-
-
-
     {
         name: 'Sweet Coriander',
         description: 'MaxHP+420, MaxSP+42, MATK+36, Skill Delay-2%',
@@ -878,11 +811,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Bigfoot Pineapple', 'Monkey Banana', 'Cream', 'Cheese']
     },
-
-
-
-
-
     {
         name: 'Prontera Royal Meat Steak',
         description: 'MaxHP+500, MaxSP+50, DEF+38, Gain immunity to the status ailments received, Cooldown time : 15 sec. Can only immune 4 times of status ailments',
@@ -915,14 +843,6 @@ export const recipes: Recipe[] = [
         type: 'Beverage Stall',
         ingredients: ['Moai Melon', 'Monkey Banana', 'Civet Grape', 'Cheese', 'Cream']
     },
-
-
-
-
-
-
-
-
     {
         name: 'Prontera Royal Fish Steak',
         description: 'MaxHP+500, MaxSP+50, ATK+38, Movement Speed+3.25%',
@@ -954,5 +874,133 @@ export const recipes: Recipe[] = [
         stars: 4.5,
         type: 'Beverage Stall',
         ingredients: ['Moai Melon', 'Bigfoot Pineapple', 'Poring Apple', 'Cheese', 'Cream']
+    },
+    {
+        name: 'Prontera Royal Salad',
+        description: 'MaxHP+500, MaxSP+50, MDEF+38, Skill Delay-2.25%, Will survive at 1 HP when received fatal damage, become invincible for next 2 sec. Cooldown: 15 sec. Can only be triggered twice',
+        image: 'prontera_royal_salad.png',
+        stars: 4.5,
+        type: 'Luxury Worktop',
+        ingredients: ['Bamboo Eggplant', 'Magic Spore', 'South Gate Carrot', 'Apple Vinegar', 'Sauce']
+    },
+    {
+        name: 'Prontera Royal Green BBQ',
+        description: '',
+        image: 'prontera_royal_green_bbq.png',
+        stars: 4.5,
+        type: 'Wild Life BBQ',
+        ingredients: ['Gold Pumpkin', 'Mountain Celery', 'West Gate Tomato', 'Cheese', 'Apple Vinegar']
+    },
+    {
+        name: 'Prontera Royal Vegetable Soup',
+        description: 'MaxHP+500, MaxSP+50, MATK+38, MDEF+38',
+        image: 'prontera_royal_vegetable_soup.png',
+        stars: 4.5,
+        type: 'Pressure Cooker',
+        ingredients: ['Bamboo Eggplant', 'Gold Pumpkin', 'South Gate Carrot', 'Cheese', 'Sauce']
+    },
+    {
+        name: 'Prontera Royal Ice Cream',
+        description: 'MaxHP+500, MaxSP+50, ATK+38, MATK+38, Damage to Boss+2.25%',
+        image: 'prontera_royal_ice_cream.png',
+        stars: 4.5,
+        type: 'Beverage Stall',
+        ingredients: ['Bigfoot Pineapple', 'Goblin Strawberry', 'Poring Apple', 'Cheese', 'Cream']
+    },
+    {
+        name: 'Original Will - Steak',
+        description: 'MaxHP+600, MaxSP+60, DEF+40, Gain immunity to the status ailments received, Cooldown time : 15 sec. Can only immune 4 times of status ailments',
+        image: 'original_will_steak.png',
+        stars: 5,
+        type: 'Luxury Worktop',
+        ingredients: ['Savage Meat', 'Muka Meat', 'Desert Wolf Meat', 'Egg Shell Picky', 'Miso Powder']
+    },
+    {
+        name: 'Original Will - Kebab',
+        description: '',
+        image: 'original_will_kebab.png',
+        stars: 5,
+        type: 'Wild Life BBQ',
+        ingredients: ['Savage Meat', 'Muka Meat', 'Desert Wolf Meat', 'Egg Shell Picky', 'Miso Powder']
+    },
+    {
+        name: 'Original Will - Broth',
+        description: 'MaxHP+600, MaxSP+60, DEF+40, MDEF+40, Gear ASPD+3.5%',
+        image: 'original_will_broth.png',
+        stars: 5,
+        type: 'Pressure Cooker',
+        ingredients: ['Savage Meat', 'Muka Meat', 'Desert Wolf Meat', 'Egg Shell Picky', 'Rainbow Powder']
+    },
+    {
+        name: 'Original Will - Juice',
+        description: 'MaxHP+600, MaxSP+60, MATK+40, DEF+40, Refine Piercing+2.5%',
+        image: 'original_will_juice.png',
+        stars: 5,
+        type: 'Beverage Stall',
+        ingredients: ['Moai Melon', 'Bigfoot Pineapple', 'Goblin Strawberry', 'Monkey Banana', 'Rainbow Powder']
+    },
+    {
+        name: 'Original Will - Fish Filet',
+        description: 'MaxHP+600, MaxSP+60, ATK+40, Movement Speed+3.5%',
+        image: 'original_will_steak.png',
+        stars: 5,
+        type: 'Luxury Worktop',
+        ingredients: ['Marc Meat', 'Mutated Fish', 'Marina Meat', 'Inkfish Tentacle', 'Miso Powder']
+    },
+    {
+        name: 'Original Will - Fish Kebabs',
+        description: 'MaxHP+600, MaxSP+60, ATK+40, DEF+40, Damage to Players+2.5%',
+        image: 'original_will_fish_kebab.jpg',
+        stars: 5,
+        type: 'Wild Life BBQ',
+        ingredients: ['Marc Meat', 'Mutated Fish', 'Marina Meat', 'Inkfish Tentacle', 'Miso Powder']
+    },
+    {
+        name: 'Original Will - Seafood Soup',
+        description: 'MaxHP+600, MaxSP+60, ATK+40, MDEF+40, Ignore DEF+2.5%',
+        image: 'original_will_seafood_soup.jpg',
+        stars: 5,
+        type: 'Pressure Cooker',
+        ingredients: ['Marc Meat', 'Mutated Fish', 'Marina Meat', 'Inkfish Tentacle', 'Rainbow Powder']
+    },
+    {
+        name: 'Original Will - Cookies',
+        description: 'MaxHP+600, MaxSP+60, DEF+40, MDEF+40, Damage to non-Boss+2.5%',
+        image: 'original_will_cookies.jpg',
+        stars: 5,
+        type: 'Beverage Stall',
+        ingredients: ['Moai Melon', 'Bigfoot Pineapple', 'Goblin Strawberry', 'Monkey Banana', 'Miso Powder']
+    },
+    {
+        name: 'Original Will - Salad',
+        description: 'MaxHP+600, MaxSP+60, MDEF+40, Skill Delay-2.5%',
+        image: 'original_will_salad.jpg',
+        stars: 5,
+        type: 'Luxury Worktop',
+        ingredients: ['Bamboo Eggplant', 'Gold Pumpkin', 'Magic Spore', 'Mountain Celery', 'Miso Powder']
+    },
+    {
+        name: 'Original Will - Green BBQ',
+        description: 'MaxHP+600, MaxSP+60, MATK+40, MDEF+40, Will survive at 1 HP when received fatal damage, become invincible for next 2 sec. Cooldown: 15 sec. Can only be triggered twice',
+        image: 'original_will_green_bbq.jpg',
+        stars: 5,
+        type: 'Wild Life BBQ',
+        ingredients: ['Bamboo Eggplant', 'Gold Pumpkin', 'Magic Spore', 'Mountain Celery', 'Miso Powder']
+    },
+    {
+        name: 'Original Will - Vegetable Soup',
+        description: 'MaxHP+600, MaxSP+60, MATK+40, MDEF+40',
+        image: 'original_will_vegetable_soup.jpg',
+        stars: 5,
+        type: 'Pressure Cooker',
+        ingredients: ['Bamboo Eggplant', 'Gold Pumpkin', 'Magic Spore', 'Mountain Celery', 'Miso Powder']
+    },
+    {
+        name: 'Original Will - Ice Cream',
+        description: 'MaxHP+600, MaxSP+60, ATK+40, MATK+40, Damage to Boss+2.5%',
+        image: 'original_will_ice_cream.jpg',
+        stars: 5,
+        type: 'Beverage Stall',
+        ingredients: ['Moai Melon', 'Bigfoot Pineapple', 'Goblin Strawberry', 'Miso Powder', 'Rainbow Powder']
     },
 ];

@@ -205,4 +205,16 @@ export const ingredients: Ingredient[] = [
         image: 'sauce.png',
         monsters: []
     },
+    {
+        name: 'Miso Powder',
+        type: 'common',
+        image: 'miso_powder.png',
+        monsters: []
+    },
+    {
+        name: 'Rainbow Powder',
+        type: 'common',
+        image: 'rainbow_powder.png',
+        monsters: []
+    },
 ];
