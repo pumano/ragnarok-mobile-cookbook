@@ -15,7 +15,7 @@
         </v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
+      <v-toolbar-items>
         <v-btn flat to="/" exact>Recipes</v-btn>
         <v-btn flat to="/ingredients" exact>Ingredients</v-btn>
         <v-btn icon>
