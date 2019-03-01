@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <v-toolbar>
-      <v-toolbar-side-icon></v-toolbar-side-icon>
       <v-toolbar-title>Ragnarok Mobile Cookbook</v-toolbar-title>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat>
@@ -15,7 +14,7 @@
         </v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
-      <v-toolbar-items>
+      <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat to="/" exact>Recipes</v-btn>
         <v-btn flat to="/ingredients" exact>Ingredients</v-btn>
         <v-btn icon>
@@ -24,6 +23,32 @@
           </a>
         </v-btn>
       </v-toolbar-items>
+
+      <v-menu class="hidden-md-and-up">
+        <v-toolbar-side-icon slot="activator"></v-toolbar-side-icon>
+        <v-list>
+          <v-list-tile to="/" exact>
+            <v-list-tile-content>
+              <v-list-tile-title to="/" exact>Recipes</v-list-tile-title>
+             </v-list-tile-content>
+          </v-list-tile>   
+           <v-list-tile to="/ingredients" exact>
+            <v-list-tile-content>
+              <v-list-tile-title >Ingredients</v-list-tile-title>
+             </v-list-tile-content>
+          </v-list-tile>   
+          <v-list-tile href="https://github.com/pumano/ragnarok-mobile-cookbook" target="_blank">
+            <v-list-tile-content>
+              <v-list-tile-title >Github</v-list-tile-title>
+             </v-list-tile-content>
+          </v-list-tile>   
+          <v-list-tile href="https://www.buymeacoffee.com/pumano" target="_blank">
+            <v-list-tile-content>
+              <v-list-tile-title >Buy Me a Coffee</v-list-tile-title>
+             </v-list-tile-content>
+          </v-list-tile>  
+        </v-list>
+      </v-menu>
     </v-toolbar>
     <router-view/>
   </div>
@@ -44,6 +69,10 @@
 #nav a {
   font-weight: bold;
   color: #2c3e50;
+}
+
+.v_list__tile__content {
+  text-decoration: none !important;
 }
 
 #nav a.router-link-exact-active {
